@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>我的学习记录</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-28T13:29:17.222Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>ling</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Python】二进制、八进制、十进制、十六进制之间的转换</title>
+    <link href="http://yoursite.com/article/202004272135.html"/>
+    <id>http://yoursite.com/article/202004272135.html</id>
+    <published>2020-04-27T13:35:57.000Z</published>
+    <updated>2020-04-28T13:29:17.222Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="二进制进制转其他"><a href="#二进制进制转其他" class="headerlink" title="二进制进制转其他"></a>二进制进制转其他</h3><h4 id="二进制转八进制：oct-int-n-2"><a href="#二进制转八进制：oct-int-n-2" class="headerlink" title="二进制转八进制：oct(int(n,2))"></a>二进制转八进制：oct(int(n,2))</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=input()</span><br><span class="line">print(oct(int(n,<span class="number">2</span>)))</span><br></pre></td></tr></table></figure><h4 id="二进制转十进制：int-n-2"><a href="#二进制转十进制：int-n-2" class="headerlink" title="二进制转十进制：int(n,2)"></a>二进制转十进制：int(n,2)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=input()</span><br><span class="line">print(bin(n))</span><br></pre></td></tr></table></figure><h4 id="二进制转十六进制：hex-int-n-2"><a href="#二进制转十六进制：hex-int-n-2" class="headerlink" title="二进制转十六进制：hex(int(n,2))"></a>二进制转十六进制：hex(int(n,2))</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=input()</span><br><span class="line">print(hex(int(n,<span class="number">2</span>)))</span><br></pre></td></tr></table></figure><h3 id="八进制转其他进制"><a href="#八进制转其他进制" class="headerlink" title="八进制转其他进制"></a>八进制转其他进制</h3><h4 id="八进制转二进制：bin-int-n-8"><a href="#八进制转二进制：bin-int-n-8" class="headerlink" title="八进制转二进制：bin(int(n,8))"></a>八进制转二进制：bin(int(n,8))</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=input()</span><br><span class="line">print(bin(int(n,<span class="number">8</span>)))</span><br></pre></td></tr></table></figure><h4 id="八进制转十进制：int-n-8"><a href="#八进制转十进制：int-n-8" class="headerlink" title="八进制转十进制：int(n,8)"></a>八进制转十进制：int(n,8)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=input()</span><br><span class="line">print(int(n,<span class="number">8</span>))</span><br></pre></td></tr></table></figure><h4 id="八进制转十六进制：hex-int-n-16"><a href="#八进制转十六进制：hex-int-n-16" class="headerlink" title="八进制转十六进制：hex(int(n,16))"></a>八进制转十六进制：hex(int(n,16))</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=input()</span><br><span class="line">print(hex(int(n,<span class="number">8</span>)))</span><br></pre></td></tr></table></figure><h3 id="十进制转其他进制"><a href="#十进制转其他进制" class="headerlink" title="十进制转其他进制"></a>十进制转其他进制</h3><h4 id="十进制转二进制：bin-n"><a href="#十进制转二进制：bin-n" class="headerlink" title="十进制转二进制：bin(n)"></a>十进制转二进制：bin(n)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=int(input())</span><br><span class="line">print(bin(n))</span><br></pre></td></tr></table></figure><h4 id="十进制转八进制：oct-n"><a href="#十进制转八进制：oct-n" class="headerlink" title="十进制转八进制：oct(n)"></a>十进制转八进制：oct(n)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=int(input())</span><br><span class="line">print(oct(n))</span><br></pre></td></tr></table></figure><h4 id="十进制转十六进制：hex-n"><a href="#十进制转十六进制：hex-n" class="headerlink" title="十进制转十六进制：hex(n)"></a>十进制转十六进制：hex(n)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=int(input())</span><br><span class="line">print(hex(n))</span><br></pre></td></tr></table></figure><h3 id="十六进制转其他进制"><a href="#十六进制转其他进制" class="headerlink" title="十六进制转其他进制"></a>十六进制转其他进制</h3><h4 id="十六进制转二进制：bin-int-n-16"><a href="#十六进制转二进制：bin-int-n-16" class="headerlink" title="十六进制转二进制：bin(int(n,16))"></a>十六进制转二进制：bin(int(n,16))</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=input()</span><br><span class="line">print(bin(int(n,<span class="number">16</span>)))</span><br></pre></td></tr></table></figure><h4 id="十六进制转八进制：oct-int-n-16"><a href="#十六进制转八进制：oct-int-n-16" class="headerlink" title="十六进制转八进制：oct(int(n,16))"></a>十六进制转八进制：oct(int(n,16))</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=input()</span><br><span class="line">print(oct(int(n,<span class="number">16</span>)))</span><br></pre></td></tr></table></figure><h4 id="十六进制转十进制：int-n-16"><a href="#十六进制转十进制：int-n-16" class="headerlink" title="十六进制转十进制：int(n,16)"></a>十六进制转十进制：int(n,16)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n=input()</span><br><span class="line">print(int(n,<span class="number">16</span>))</span><br></pre></td></tr></table></figure><h3 id="十进制转其他进制（int、float类型）"><a href="#十进制转其他进制（int、float类型）" class="headerlink" title="十进制转其他进制（int、float类型）"></a>十进制转其他进制（int、float类型）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">from</span> typing <span class="keyword">import</span> TypeVar</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line">paramNum = TypeVar(<span class="string">'paramNum'</span>, float, int)  <span class="comment"># Must be float or int</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># int、float类型：十进制转二、八、十六、三十二...进制</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decimal_system_to</span><span class="params">(x: paramNum, base: int, digit: int = <span class="number">0</span>)</span> -&gt; str:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    :param x: 值，int或float类型</span></span><br><span class="line"><span class="string">    :param base: 进制，如：2，8，16，32，int类型，传10返回传入参数保留小数位四舍五入后的值</span></span><br><span class="line"><span class="string">    :param digit: 显示小数的位数，默认不显示，int类型，正整数</span></span><br><span class="line"><span class="string">    :return: 返回str类型的结果</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">if</span> base &gt;= <span class="number">2</span> <span class="keyword">and</span> digit &gt;= <span class="number">0</span> <span class="keyword">and</span> isinstance(base, int) <span class="keyword">and</span> isinstance(digit, int):</span><br><span class="line">        hex_list = [str(x) <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>)]</span><br><span class="line">        <span class="keyword">if</span> base &gt; <span class="number">10</span>:</span><br><span class="line">            hex_list.extend([chr(x) <span class="keyword">for</span> x <span class="keyword">in</span> range(ord(<span class="string">'A'</span>), ord(<span class="string">'A'</span>) + (base - <span class="number">10</span>))])</span><br><span class="line">        <span class="keyword">if</span> isinstance(x, int) <span class="keyword">or</span> isinstance(x, float):</span><br><span class="line">            <span class="keyword">if</span> x &lt; <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="string">'-'</span> + decimal_system_to(abs(x), digit)</span><br><span class="line">            result = []</span><br><span class="line">            <span class="comment"># 计算整数部分</span></span><br><span class="line">            integer = int(x)</span><br><span class="line">            <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">                integer, remainder = divmod(int(integer), base)</span><br><span class="line">                result.insert(<span class="number">0</span>, str(hex_list[remainder]))</span><br><span class="line">                <span class="keyword">if</span> integer == <span class="number">0</span>:</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">            <span class="comment"># 计算小数部分</span></span><br><span class="line">            <span class="keyword">if</span> digit:</span><br><span class="line">                result.append(<span class="string">'.'</span>)</span><br><span class="line">                flag = <span class="number">0</span></span><br><span class="line">                decimal = math.modf(x)[<span class="number">0</span>]</span><br><span class="line">                <span class="keyword">while</span> flag &lt; digit:</span><br><span class="line">                    decimal = decimal * base</span><br><span class="line">                    result.append(str(hex_list[int(decimal)]))</span><br><span class="line">                    <span class="keyword">if</span> math.modf(decimal)[<span class="number">0</span>] == <span class="number">0</span>:</span><br><span class="line">                        result.append(<span class="string">'0'</span> * (digit - flag - <span class="number">1</span>))</span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">                    <span class="keyword">if</span> decimal &gt; <span class="number">0</span>:</span><br><span class="line">                        decimal = math.modf(decimal)[<span class="number">0</span>]</span><br><span class="line">                    flag += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> <span class="string">''</span>.join(result)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">'%s cannot be interpreted as an integer'</span> % (str(x))</span><br><span class="line">    <span class="keyword">elif</span> isinstance(base, float):</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'base must be integer'</span></span><br><span class="line">    <span class="keyword">elif</span> base == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> (<span class="string">'%.'</span> + <span class="string">'%df'</span> % digit) % x</span><br><span class="line">    <span class="keyword">elif</span> base &lt; <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'base must be &gt;= 2, or 0'</span></span><br><span class="line">    <span class="keyword">elif</span> isinstance(digit, float):</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'base must be integer'</span></span><br><span class="line">    <span class="keyword">elif</span> digit &lt; <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'digit must be &gt;= 0'</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      Python之二进制、八进制、十进制、十六进制之间的转换进制
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【测试设计】登录功能测试设计</title>
+    <link href="http://yoursite.com/article/202004182305.html"/>
+    <id>http://yoursite.com/article/202004182305.html</id>
+    <published>2020-04-18T15:05:03.000Z</published>
+    <updated>2020-04-27T13:43:25.650Z</updated>
+    
+    <content type="html"><![CDATA[<p>登录界面：用户名、密码、登录、勾选框（记住密码）、注册</p><h3 id="功能测试"><a href="#功能测试" class="headerlink" title="功能测试"></a>功能测试</h3><ol><li>输入已注册的用户名和正确的密码登录，验证登录成功（正确登录）</li><li>输入已注册的用户名和错误的密码登录，验证登录失败，且提示信息正确（错误校验）</li><li>输入未注册的用户名和任意密码登录，验证登录失败，且提示信息正确</li><li>输入未激活的用户名密码登录，验证登录失败，且提示信息正确</li><li>输入已注销的用户名密码登录，验证登录失败，且提示信息正确</li><li>用户名和密码都为空，验证登录失败，且提示信息正确（非空校验）</li><li>用户名和密码两者之一为空，验证登录失败，且提示信息正确（非空校验）</li><li>用户名和密码中含有空格的处理</li><li>用户名和密码是否对大小写敏感</li><li>用户名和密码的长度限制</li><li>输入密码时，键盘的大小写是否开启是否有提示</li><li>密码输入框是否有加密显示</li><li>如果启用验证码，验证码是否容易识别</li><li>如果启用验证码，输入正确的用户名、密码、验证码，验证登录成功</li><li>如果启用验证码，输入正确的用户名、密码和错误的验证码，验证登录失败，且提示信息正确</li><li>如果启用验证码，输入正确的用户名、密码，验证码为空，验证登录失败，且提示信息正确</li><li>如果启用验证码，验证码图片是否可以正常更换验证码，更换后是否可用</li><li>如果启用验证码，刷新页面是否会刷新验证码</li><li>如果启用验证码，验证码具有时效性，分别验证时效性内、外的有效性</li><li>快捷键tab和enter是否可以使用</li><li>用户第一次登录时，是否提示修改密码</li><li>不同权限的用户登录，展示的权限内容是否正确</li><li>用户成功登录，会话超时，继续操作是否会重定向用户登录界面</li></ol><h3 id="安全测试"><a href="#安全测试" class="headerlink" title="安全测试"></a>安全测试</h3>]]></content>
+    
+    <summary type="html">
+    
+      对登录功能测试点进行总结，便于查阅
+    
+    </summary>
+    
+    
+      <category term="测试设计" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="测试设计" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="测试点" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95%E7%82%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【数据库】MySQL的下载与安装教程</title>
+    <link href="http://yoursite.com/article/202004172233.html"/>
+    <id>http://yoursite.com/article/202004172233.html</id>
+    <published>2020-04-17T14:33:13.000Z</published>
+    <updated>2020-04-23T05:40:27.522Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Window环境"><a href="#Window环境" class="headerlink" title="Window环境"></a>Window环境</h2><h3 id="1-下载MySQL"><a href="#1-下载MySQL" class="headerlink" title="1.下载MySQL"></a>1.下载MySQL</h3><ul><li><p><a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">下载地址</a></p></li><li><p>根据需要下载安装包</p><img src="/img/image-20200417225211487.png" style="zoom: 70%;" /><img src="/img/image-20200417230508872.png" style="zoom: 70%;" /></li></ul><h3 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h3><ul><li>将下载的安装解压至指定的路径，如</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      MySQL数据库在各环境下的安装
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【安全测试】SQL注入测试总结</title>
+    <link href="http://yoursite.com/article/202004151455.html"/>
+    <id>http://yoursite.com/article/202004151455.html</id>
+    <published>2020-04-15T06:55:12.000Z</published>
+    <updated>2020-04-17T14:33:51.386Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>本文参考《SQL注入攻击与防御》（第2版），记录对SQL注入测试方法进行一些个人的理解和总结。<font color='red'><strong>不要轻易尝试SQL注入操作，除非已得到应用或系统所有者的许可(最好是书面形式)！！！</strong></font></p>]]></content>
+    
+    <summary type="html">
+    
+      本文主要针对SQL注入测试方法的总结
+    
+    </summary>
+    
+    
+      <category term="安全测试" scheme="http://yoursite.com/categories/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="安全测试" scheme="http://yoursite.com/tags/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Hexo博客】Hexo+GitHub搭建blog</title>
+    <link href="http://yoursite.com/article/202004132201.html"/>
+    <id>http://yoursite.com/article/202004132201.html</id>
+    <published>2020-04-13T14:01:06.000Z</published>
+    <updated>2020-04-15T08:02:00.720Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-Git安装"><a href="#1-Git安装" class="headerlink" title="1.Git安装"></a>1.Git安装</h3><ul><li><p><a href="https://git-for-windows.github.io/" target="_blank" rel="noopener">下载地址</a></p></li><li><p>安装步骤：双击下载好的exe文件，一直next</p></li><li><p>安装好后，打开gitbash，查看版本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git --version</span><br></pre></td></tr></table></figure></li></ul><h3 id="2-node-js安装"><a href="#2-node-js安装" class="headerlink" title="2.node.js安装"></a>2.node.js安装</h3><ul><li><p><a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">下载地址</a></p></li><li><p>安装步骤：双击下载好的msi文件，一直next，注意在Custom Setup这步选择<code>Add to PATHS</code>，可以自动配置环境变量</p></li><li><p>安装好后，使用gitbash或window的命令行查看版本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure></li><li><p>如果查看版本报错，需要查看环境变量是否配置成功</p></li></ul><h3 id="3-node-js安装"><a href="#3-node-js安装" class="headerlink" title="3.node.js安装"></a>3.node.js安装</h3>]]></content>
+    
+    <summary type="html">
+    
+      Window下从零开始搭建Hexo+GitHub的blog
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/article/202004131703.html"/>
+    <id>http://yoursite.com/article/202004131703.html</id>
+    <published>2020-04-13T09:03:12.707Z</published>
+    <updated>2020-04-13T09:03:12.707Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>

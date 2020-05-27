@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-20T14:35:37.126Z</updated>
+  <updated>2020-05-27T14:39:39.920Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Python】Linux下非root用户安装python3</title>
+    <link href="http://yoursite.com/article/202005272137.html"/>
+    <id>http://yoursite.com/article/202005272137.html</id>
+    <published>2020-05-27T13:37:53.000Z</published>
+    <updated>2020-05-27T14:39:39.920Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>工作过程中，遇到自动化框架python2改为python3时，服务器上未安装python3环境，无外网，在非root用户下安装python3环境的情况，记录一下</p><h3 id="安装python3"><a href="#安装python3" class="headerlink" title="安装python3"></a>安装python3</h3><p>1.下载python3安装包，网址：<a href="https://www.python.org/downloads/source/" target="_blank" rel="noopener">https://www.python.org/downloads/source/</a> 此处我选择3.8.3版本的</p><p><img src="/img/image-20200527215143661.png" alt="image-20200527215143661"></p><p>2.将下载的安装包上传至服务器上并解压</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">tar -xzf Python-3.8.3.tgz</span><br><span class="line">mkdir -p /home/python38 # 这里新建python安装路径，安装在其他地方也可以，这里选择home下</span><br><span class="line">cd Python-3.8.3</span><br><span class="line">./configure --prefix="/home/python38"</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure><p>3.一般来说，上述完成后pip已经安装好了，可在<strong>/home/python38/bin/</strong>下看到</p><p>4.环境变量配置</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bash_profile</span><br></pre></td></tr></table></figure><p>在~/.bash_profile文件中配置</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PATH="$PATH:/home/python38"</span><br><span class="line">export PATH="$PATH:/home/python38/bin"</span><br></pre></td></tr></table></figure><p>保存文件后，执行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure><p>5.查看python是否已安装成功</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python --version</span><br></pre></td></tr></table></figure><h3 id="安装第三方模块"><a href="#安装第三方模块" class="headerlink" title="安装第三方模块"></a>安装第三方模块</h3><p>1.在官网下载第三方模块，官网：<a href="https://pypi.org/" target="_blank" rel="noopener">https://pypi.org/</a></p><p><img src="/img/image-20200527223224630.png" alt="image-20200527223224630"></p><p>2.两种文件均可下载</p><p><img src="/img/image-20200527222553964.png" alt="image-20200527222553964"></p><p>a.安装<strong>*.whl</strong>文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install requests-2.23.0-py2.py3-none-any.whl</span><br></pre></td></tr></table></figure><p>b.安装<strong>*.tar.gz</strong>文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install requests-2.23.0.tar.gz</span><br></pre></td></tr></table></figure><p>3.安装时出现以下情况</p><p><img src="/img/image-20200520223557252.png" alt="image-20200520223557252"></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR: Could not find a version that satisfies the requirement soupsieve&gt;=1.2 (from beautifulsoup4==4.9.1) (from versions: none)</span><br><span class="line">ERROR: No matching distribution found for soupsieve&gt;=1.2 (from beautifulsoup4==4.9.1)</span><br></pre></td></tr></table></figure><p>报错信息意思是：需要先安装soupsieve模块，版本要&gt;=1.2</p>]]></content>
+    
+    <summary type="html">
+    
+      Linux下非root用户安装python3及第三方模块
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/python/Linux/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>【Python+Robotframework】Robotframework接口自动化</title>
@@ -52,9 +79,9 @@
     <link href="http://yoursite.com/article/202005182318.html"/>
     <id>http://yoursite.com/article/202005182318.html</id>
     <published>2020-05-18T15:18:36.000Z</published>
-    <updated>2020-05-21T02:07:10.385Z</updated>
+    <updated>2020-05-27T13:20:48.516Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="安装intelliBot插件报错"><a href="#安装intelliBot插件报错" class="headerlink" title="安装intelliBot插件报错"></a>安装intelliBot插件报错</h4><p>报错信息：</p><p><img src="/img/image-20200518234022166.png" alt="image-20200518234022166"></p><p>解决方案：</p><p>方案一：</p><p>1.打开下载<strong>IDEA</strong>插件的网址 <a href="http://https//plugins.jetbrains.com/" target="_blank" rel="noopener">https://plugins.jetbrains.com/</a>  搜索插件名字</p><p><img src="/img/image-20200519135043356.png" alt="image-20200519135043356"></p><p>2.搜索intelliBot并下载</p><p>3.打开pycharm，<strong>File-&gt;Settings-&gt;Plugins</strong>，点击<strong>Install Plugin from Disk…</strong>选择下载的jar包，然后重启即可</p><p><img src="/img/image-20200519223457904.png" alt="image-20200519223457904"></p><p>方案二：无法打开下载<strong>IDEA</strong>插件的网址</p><p>1.打开<strong>IDEA</strong>插件的网址，出现：</p><p><img src="/img/image-20200519140024112.png" alt="image-20200519140024112"></p><p>2.在“<strong>C:\Windows\System32\drivers\etc</strong>”路径下的“<strong>hosts</strong>”文件中加上”<strong>199.232.68.133 raw.githubusercontent.com</strong>“，无法直接改hosts文件的时候可以先复制到桌面，改完后替换文件</p><p><img src="/img/image-20200519140231187.png" alt="image-20200519140231187"></p><p>3.打开pycharm，点击<strong>File-&gt;Settings-&gt;Plugins</strong>，输入<strong>IntelliBot</strong>，点击<strong>Install</strong>下载就可以了</p><p><img src="/img/image-20200519140827606.png" alt="image-20200519140827606"></p><h4 id="RobotFramework的RIDE启动报错"><a href="#RobotFramework的RIDE启动报错" class="headerlink" title="RobotFramework的RIDE启动报错"></a>RobotFramework的RIDE启动报错</h4><p>报错信息：</p><p><img src="/img/image-20200518233216745.png" alt="image-20200518233216745"></p><p>解决方案：</p><p>在python3的安装文件下<strong>Lib\site-packages\robotide\application\application.py</strong>文件中的<strong>Onlnit</strong>方法中增加</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.locale = wx.Locale(wx.LANGUAGE_ENGLISH)</span><br></pre></td></tr></table></figure><p><img src="/img/image-20200518233745149.png" alt="image-20200518233745149"></p><h4 id="pycharm代码内容和控制台中文乱码"><a href="#pycharm代码内容和控制台中文乱码" class="headerlink" title="pycharm代码内容和控制台中文乱码"></a>pycharm代码内容和控制台中文乱码</h4><p>解决方案：</p><p>1.打开pycharm，点击<strong>File-&gt;Settings-&gt;Editor-&gt;Font</strong>，将<strong>Fallback font</strong>改为有中文的字体</p><p><img src="/img/image-20200519211836394.png" alt="image-20200519211836394"></p><p>2.打开<strong>Editor-&gt;Color Scheme -&gt; Console Font</strong>，将第一个<strong>Font</strong>改为带有中文的字体</p><p><img src="/img/image-20200519211931745.png" alt="image-20200519211931745"></p><p><img src="C:%5Cblog%5Cthemes%5CBlueLake%5Csource%5Cimg%5Cimage-20200520223557252.png" alt="image-20200520223557252"></p>]]></content>
+    <content type="html"><![CDATA[<h4 id="安装intelliBot插件报错"><a href="#安装intelliBot插件报错" class="headerlink" title="安装intelliBot插件报错"></a>安装intelliBot插件报错</h4><p>报错信息：</p><p><img src="/img/image-20200518234022166.png" alt="image-20200518234022166"></p><p>解决方案：</p><p>方案一：</p><p>1.打开下载<strong>IDEA</strong>插件的网址 <a href="http://https//plugins.jetbrains.com/" target="_blank" rel="noopener">https://plugins.jetbrains.com/</a>  搜索插件名字</p><p>2.搜索intelliBot并下载</p><p><img src="/img/image-20200527211856015.png" alt="image-20200527211856015"></p><p>3.打开pycharm，<strong>File-&gt;Settings-&gt;Plugins</strong>，点击<strong>Install Plugin from Disk…</strong>选择下载的jar包，然后重启即可</p><p><img src="/img/image-20200519223457904.png" alt="image-20200519223457904"></p><p>方案二：无法打开下载<strong>IDEA</strong>插件的网址</p><p>1.打开<strong>IDEA</strong>插件的网址，出现：</p><p><img src="/img/image-20200519140024112.png" alt="image-20200519140024112"></p><p>2.在“<strong>C:\Windows\System32\drivers\etc</strong>”路径下的“<strong>hosts</strong>”文件中加上”<strong>199.232.68.133 raw.githubusercontent.com</strong>“，无法直接改hosts文件的时候可以先复制到桌面，改完后替换文件</p><p><img src="/img/image-20200519140231187.png" alt="image-20200519140231187"></p><p>3.打开pycharm，点击<strong>File-&gt;Settings-&gt;Plugins</strong>，输入<strong>IntelliBot</strong>，点击<strong>Install</strong>下载就可以了</p><p><img src="/img/image-20200519140827606.png" alt="image-20200519140827606"></p><h4 id="RobotFramework的RIDE启动报错"><a href="#RobotFramework的RIDE启动报错" class="headerlink" title="RobotFramework的RIDE启动报错"></a>RobotFramework的RIDE启动报错</h4><p>报错信息：</p><p><img src="/img/image-20200518233216745.png" alt="image-20200518233216745"></p><p>解决方案：</p><p>在python3的安装文件下<strong>Lib\site-packages\robotide\application\application.py</strong>文件中的<strong>Onlnit</strong>方法中增加</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.locale = wx.Locale(wx.LANGUAGE_ENGLISH)</span><br></pre></td></tr></table></figure><p><img src="/img/image-20200518233745149.png" alt="image-20200518233745149"></p><h4 id="pycharm代码内容和控制台中文乱码"><a href="#pycharm代码内容和控制台中文乱码" class="headerlink" title="pycharm代码内容和控制台中文乱码"></a>pycharm代码内容和控制台中文乱码</h4><p>解决方案：</p><p>1.打开pycharm，点击<strong>File-&gt;Settings-&gt;Editor-&gt;Font</strong>，将<strong>Fallback font</strong>改为有中文的字体</p><p><img src="/img/image-20200519211836394.png" alt="image-20200519211836394"></p><p>2.打开<strong>Editor-&gt;Color Scheme -&gt; Console Font</strong>，将第一个<strong>Font</strong>改为带有中文的字体</p><p><img src="/img/image-20200519211931745.png" alt="image-20200519211931745"></p><p><img src="C:%5Cblog%5Cthemes%5CBlueLake%5Csource%5Cimg%5Cimage-20200520223557252.png" alt="image-20200520223557252"></p>]]></content>
     
     <summary type="html">
     

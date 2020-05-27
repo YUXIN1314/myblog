@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><script type="text/javascript" src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script><link rel="stylesheet" type="text/css" href="//fonts.loli.net/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style-dark.css?v=2.0.5"><link rel="stylesheet" type="text/css" href="/css/highlight-dark.css?v=2.0.5"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><link rel="stylesheet" type="text/css" href="https://unpkg.com/gitalk/dist/gitalk.css?v=2.0.5"><title>【Python】Python语言标准库 | 我的学习记录</title><meta name="generator" content="Hexo 4.2.0"></head><body><script type="text/javascript" src="/js/back.js?v=2.0.5"></script><link rel="stylesheet" type="text/css" href="/css/index_style.css?v=2.0.5"><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">【Python】Python语言标准库</h1><a id="logo" href="/.">我的学习记录</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">【Python】Python语言标准库</h1><div class="post-meta"><a href="/article/202005111409.html#comments" class="comment-count"></a><p><span class="date">May 11, 2020</span><span><a href="/categories/Python/" class="category">Python</a></span></p></div><div class="post-content"><h2 id="标准库"><a href="#标准库" class="headerlink" title="标准库"></a>标准库</h2><p>在安装Python时就默认已经安装好的模块，Python具有功能强大的标准库</p>
+<h3 id="数字和数学模块"><a href="#数字和数学模块" class="headerlink" title="数字和数学模块"></a>数字和数学模块</h3><p>numbers：数字抽象基类</p>
+<p>math：数学函数</p>
+<p>cmath：复数的数学函数</p>
+<p>decimal：十进制定点和浮点算术</p>
+<p>fractions：有理数</p>
+<p>random：生成伪随机数</p>
+<p>statistics：数学统计功能</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>datetime：基本日期和时间类型</p>
+<p>calendar：与日历相关的一般功能</p>
+<p>collections：容器数据类型</p>
+<p>heapq：堆队列算法</p>
+<p>bisect：数组二分算法</p>
+<p>array：高效的数值数组</p>
+<p>weakref：弱引用</p>
+<p>types：动态类型创建和内置类型的名称</p>
+<p>copy：浅层和深层复制操作</p>
+<p>pprint：格式化输出</p>
+<p>reprlib：备用repr()实现</p>
+<p>enum：支持枚举</p>
+<h3 id="功能编程模块"><a href="#功能编程模块" class="headerlink" title="功能编程模块"></a>功能编程模块</h3><p>itertools：为高效循环创建迭代器的函数</p>
+<p>functools：可调用对象的高阶函数和操作</p>
+<p>operator：标准运算符作为函数</p>
+<h3 id="数据持久化"><a href="#数据持久化" class="headerlink" title="数据持久化"></a>数据持久化</h3><p>pickle：Python对象序列化</p>
+<p>copyreh：注册pickle支持功能</p>
+<p>shelve：Python对象持久化</p>
+<p>marshal：内部Python对象序列化</p>
+<p>dbm：与Unix“数据库”的接口</p>
+<p>sqlite3：SQLite数据库的DB-API 2.0接口</p>
+<h3 id="数据压缩和存档"><a href="#数据压缩和存档" class="headerlink" title="数据压缩和存档"></a>数据压缩和存档</h3><p>zlib：与gzip兼容的压缩</p>
+<p>gzip/bz2：支持gzip/bzip2文件</p>
+<p>lzma：使用LZMA算法进行压缩</p>
+<p>zipfile：使用ZIP存档</p>
+<p>tarfiel：读取和写入tar归档文件</p>
+<h3 id="文件格式"><a href="#文件格式" class="headerlink" title="文件格式"></a>文件格式</h3><p>csv：CSV文件读写</p>
+<p>configparser：配置文件解析器</p>
+<p>netrc：netrc文件处理</p>
+<p>xdrlib：对XDR数据进行编码和解码</p>
+<p>plistlib：生成并解析MAC OS X.plist文件</p>
+<h3 id="文件和目录访问"><a href="#文件和目录访问" class="headerlink" title="文件和目录访问"></a>文件和目录访问</h3><p>pathlib：面向对象的文件系统路径</p>
+<p>os.path：常见的路径名操作</p>
+<p>fileinput：迭代多个输入流中的行</p>
+<p>stat：解释stat()结果</p>
+<p>filecmp：文件和目录比较</p>
+<p>tempfile：生成临时文件和 目录</p>
+<p>glob：Unix文件名模式匹配</p>
+<p>fnmatch：Unix文件名模式匹配</p>
+<p>linecache：随机访问文本行</p>
+<p>shutil：高级文件操作</p>
+<p>macpath：Mac OS 9路径操作函数</p>
+<h3 id="通用操作系统服务"><a href="#通用操作系统服务" class="headerlink" title="通用操作系统服务"></a>通用操作系统服务</h3><p>os：其他操作系统接口</p>
+<p>io：用于处理流的核心工具</p>
+<p>time：时间访问和转换</p>
+<p>argparse：用于命令行选项，参数和子命令的解析器</p>
+<p>getopt：用于命令行选项的C风格解析器</p>
+<p>logging：Python的日志记录工具</p>
+<p>getpass：便携式密码输入</p>
+<p>curses：字符单元格显示的终端处理</p>
+<p>platform：访问底层平台的标识数据</p>
+<p>errno：标准errno系统符号</p>
+<p>ctypes：Python的外部函数库</p>
+<h3 id="并发执行"><a href="#并发执行" class="headerlink" title="并发执行"></a>并发执行</h3><p>threading：基于线程的并行性</p>
+<p>multiprocessing：基于进程的并行性</p>
+<p>concurrent.futures：启动并行任务</p>
+<p>subprocess：子流程管理</p>
+<p>sched：事件调度程序</p>
+<p>queue：同步的队列类</p>
+<p>_thread：低级线程API</p>
+<h3 id="加密服务"><a href="#加密服务" class="headerlink" title="加密服务"></a>加密服务</h3><p>hashlib：安全哈希和消息摘要算法接口</p>
+<p>hmac：用于消息身份验证的密钥哈希算法</p>
+<p>secrets：生成用于管理机密的安全随机数</p>
+<h3 id="网络和进程间通信"><a href="#网络和进程间通信" class="headerlink" title="网络和进程间通信"></a>网络和进程间通信</h3><p>asyncio：异步I/O</p>
+<p>socket：低级网络接口</p>
+<p>ssl：套接字对象的TLS/SSL包装器</p>
+<p>select：等待I/O完成</p>
+<p>selectors：高级I/O复用</p>
+<p>asyncore：异步套接字处理程序</p>
+<p>asynchat：异步套接字命令/响应处理程序</p>
+<p>signal：设置异步事件的处理程序</p>
+<h3 id="互联网数据处理"><a href="#互联网数据处理" class="headerlink" title="互联网数据处理"></a>互联网数据处理</h3><p>email：电子邮件和MIME处理包</p>
+<p>json：JSON编码器和解码器</p>
+<p>mailcap：Mailcap文件处理</p>
+<p>mailbox：以各种格式处理邮箱</p>
+<p>mimetypes：将文件名映射到MIME类型</p>
+<p>base64：Base16/Base32/Base64/Base85数据编码</p>
+<p>binhex：对binhex4文件进行编码和解码</p>
+<p>binascii：在二进制和ASCII之间转换</p>
+<p>quopri：对MIME引用的可打印数据进行编码和解码、</p>
+<p>uu：对uuencode文件进行编码和解码</p>
+<h3 id="互联网协议和支持"><a href="#互联网协议和支持" class="headerlink" title="互联网协议和支持"></a>互联网协议和支持</h3><p>webbrowser：Web浏览器控制器</p>
+<p>cgi：通用网关接口支持</p>
+<p>cgitb：CGI脚本的回溯管理器</p>
+<p>wsgiref：WSGI使用程序和参考实现</p>
+<p>urllib：URL处理模块</p>
+<p>http：HTTP模块</p>
+<p>ftplib/poplib/imaplib/nntplib/smtplib：FTP/POP3/IMAP4NNTP/SMTP协议客户端</p>
+<p>smtpd：SMTP服务器</p>
+<p>telnetlib：Telnet客户端</p>
+<p>socketserver：网络服务器的框架</p>
+<p>xmlrpc：XMLRPC服务器和客户端模块</p>
+<p>ipaddress：IPv4/IPv6操作库</p>
+<h3 id="多媒体服务"><a href="#多媒体服务" class="headerlink" title="多媒体服务"></a>多媒体服务</h3><p>audioop：处理原始音频数据</p>
+<p>aifc：读写AIFF和AIFC文件</p>
+<p>sunau：读取和写入Sun AU文件</p>
+<p>wave：读写IFF分块数据</p>
+<p>colorsys：颜色系统之间的转换</p>
+<p>imghdr：确定图像的类型</p>
+<p>sndhdr：确定声音文件的类型</p>
+<p>ossaudiodev：访问兼容OSS的音频设备</p>
+<h3 id="结构化标记处理工具"><a href="#结构化标记处理工具" class="headerlink" title="结构化标记处理工具"></a>结构化标记处理工具</h3><p>html：超文本标记语言支持</p>
+<p>xml：XML处理模块</p>
+<h3 id="程序框架"><a href="#程序框架" class="headerlink" title="程序框架"></a>程序框架</h3><p>turtle：海龟作图库</p>
+<p>cmd：支持面向行的命令解释器</p>
+<p>shlex：简单的此法分析</p>
+<h3 id="图形用户界面"><a href="#图形用户界面" class="headerlink" title="图形用户界面"></a>图形用户界面</h3><p>tkinter：Tcl/Tk的Python接口</p>
+</div><div class="post-copyright"><blockquote><p>原文作者: ling</p><p>原文链接: <a href="http://yoursite.com/article/202005111409.html">http://yoursite.com/article/202005111409.html</a></p><p>版权声明: 转载请注明出处(必须保留作者署名及链接)</p></blockquote></div><div class="tags"><a href="/tags/Python/">Python</a></div><div class="post-share"><div class="social-share"><span>分享到:</span></div></div><div class="post-nav"><a href="/article/202005121258.html" class="pre">【Python+Selenium】Selenium中无法点击元素情况分析</a><a href="/article/202004292248.html" class="next">【Python+Django】pip install Django很慢的解决办法</a></div><div id="comments"><div id="container"><script type="text/javascript" src="https://unpkg.com/gitalk/dist/gitalk.min.js?v=2.0.5"></script><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=2.0.5"></script><script>var gitalk = new Gitalk({
+  clientID: '84db155a4171731c939f',
+  clientSecret: '3b54c755b058213fd1b79fb6af00746c3adf3221',
+  repo: 'Blog',
+  owner: 'yuxinla',
+  admin: ['yuxinla'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: false,
+  language: 'zh-CN',
+  pagerDirection: 'last'
+})
+gitalk.render('container')</script></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">文章目录</i></div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#标准库"><span class="toc-text">标准库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数字和数学模块"><span class="toc-text">数字和数学模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型"><span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#功能编程模块"><span class="toc-text">功能编程模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据持久化"><span class="toc-text">数据持久化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据压缩和存档"><span class="toc-text">数据压缩和存档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件格式"><span class="toc-text">文件格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件和目录访问"><span class="toc-text">文件和目录访问</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通用操作系统服务"><span class="toc-text">通用操作系统服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#并发执行"><span class="toc-text">并发执行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#加密服务"><span class="toc-text">加密服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网络和进程间通信"><span class="toc-text">网络和进程间通信</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#互联网数据处理"><span class="toc-text">互联网数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#互联网协议和支持"><span class="toc-text">互联网协议和支持</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多媒体服务"><span class="toc-text">多媒体服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#结构化标记处理工具"><span class="toc-text">结构化标记处理工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#程序框架"><span class="toc-text">程序框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图形用户界面"><span class="toc-text">图形用户界面</span></a></li></ol></li></ol></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/article/202005192348.html">【Python+Robotframework】Robotframework接口自动化</a></li><li class="post-list-item"><a class="post-list-link" href="/article/202005182318.html">【Python+Robotframework】Robotframework安装使用的报错及解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/article/202005181545.html">【Python+Robotframework】pycharm下robotframework环境搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/article/202005132050.html">【Python】时间相关模块(datetime、time)</a></li><li class="post-list-item"><a class="post-list-link" href="/article/202005122113.html">【Python】时间戳转换</a></li><li class="post-list-item"><a class="post-list-link" href="/article/202005121258.html">【Python+Selenium】Selenium中无法点击元素情况分析</a></li><li class="post-list-item"><a class="post-list-link" href="/article/202005111409.html">【Python】Python语言标准库</a></li><li class="post-list-item"><a class="post-list-link" href="/article/202004292248.html">【Python+Django】pip install Django很慢的解决办法</a></li><li class="post-list-item"><a class="post-list-link" href="/article/202004272135.html">【Python】二进制、八进制、十进制、十六进制之间的转换</a></li><li class="post-list-item"><a class="post-list-link" href="/article/202004182305.html">【测试设计】登录功能测试设计</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-gui"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Django/">Django</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/Robotframework/">Robotframework</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/Robotframework/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/">接口自动化</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/Selenium/">Selenium</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/">安全测试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%B6%E9%97%B4%E6%88%B3/">时间戳</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/">测试设计</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"><a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/Robotframework/" style="font-size: 15px;">Robotframework</a> <a href="/tags/Django/" style="font-size: 15px;">Django</a> <a href="/tags/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/" style="font-size: 15px;">接口自动化</a> <a href="/tags/Selenium/" style="font-size: 15px;">Selenium</a> <a href="/tags/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/" style="font-size: 15px;">安全测试</a> <a href="/tags/SQL/" style="font-size: 15px;">SQL</a> <a href="/tags/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/" style="font-size: 15px;">测试设计</a> <a href="/tags/%E6%B5%8B%E8%AF%95%E7%82%B9/" style="font-size: 15px;">测试点</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 15px;">数据库</a> <a href="/tags/MySQL/" style="font-size: 15px;">MySQL</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">14</span></li></ul></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">网站地图</a> |  <a href="/atom.xml">订阅本站</a> |  <a href="/about/">联系博主</a></p><p><span> Copyright &copy;<a href="/." rel="nofollow">ling.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script type="text/javascript" src="/js/search.json.js?v=2.0.5"></script><div id="fullscreen-img" class="hide"><span class="close"></span></div><script type="text/javascript" src="/js/imgview.js?v=2.0.5" async></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.5" async></script><link rel="stylesheet" type="text/css" href="/share/css/share.css"><script type="text/javascript" src="/share/js/social-share.js" charset="utf-8"></script><script type="text/javascript" src="/share/js/qrcode.js" charset="utf-8"></script></body></html>

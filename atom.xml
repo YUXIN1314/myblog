@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-28T13:29:17.222Z</updated>
+  <updated>2020-05-20T14:35:37.126Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,216 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Python+Robotframework】Robotframework接口自动化</title>
+    <link href="http://yoursite.com/article/202005192348.html"/>
+    <id>http://yoursite.com/article/202005192348.html</id>
+    <published>2020-05-19T15:48:02.000Z</published>
+    <updated>2020-05-20T14:35:37.126Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在robot framework中，requestslibrary、httplibrary.http、rest等库，都可以用来做http接口方面的自动化测试</p><h4 id="1-requestslibrary"><a href="#1-requestslibrary" class="headerlink" title="1.requestslibrary"></a>1.requestslibrary</h4><h5 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install robotframework-requests</span><br></pre></td></tr></table></figure><h5 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h5>]]></content>
+    
+    <summary type="html">
+    
+      对Robotframework接口自动化常用库及实例介绍
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+      <category term="Robotframework" scheme="http://yoursite.com/categories/Python/Robotframework/"/>
+    
+      <category term="接口自动化" scheme="http://yoursite.com/categories/Python/Robotframework/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="Robotframework" scheme="http://yoursite.com/tags/Robotframework/"/>
+    
+      <category term="接口自动化" scheme="http://yoursite.com/tags/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Python+Robotframework】Robotframework安装使用的报错及解决方案</title>
+    <link href="http://yoursite.com/article/202005182318.html"/>
+    <id>http://yoursite.com/article/202005182318.html</id>
+    <published>2020-05-18T15:18:36.000Z</published>
+    <updated>2020-05-21T02:07:10.385Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="安装intelliBot插件报错"><a href="#安装intelliBot插件报错" class="headerlink" title="安装intelliBot插件报错"></a>安装intelliBot插件报错</h4><p>报错信息：</p><p><img src="/img/image-20200518234022166.png" alt="image-20200518234022166"></p><p>解决方案：</p><p>方案一：</p><p>1.打开下载<strong>IDEA</strong>插件的网址 <a href="http://https//plugins.jetbrains.com/" target="_blank" rel="noopener">https://plugins.jetbrains.com/</a>  搜索插件名字</p><p><img src="/img/image-20200519135043356.png" alt="image-20200519135043356"></p><p>2.搜索intelliBot并下载</p><p>3.打开pycharm，<strong>File-&gt;Settings-&gt;Plugins</strong>，点击<strong>Install Plugin from Disk…</strong>选择下载的jar包，然后重启即可</p><p><img src="/img/image-20200519223457904.png" alt="image-20200519223457904"></p><p>方案二：无法打开下载<strong>IDEA</strong>插件的网址</p><p>1.打开<strong>IDEA</strong>插件的网址，出现：</p><p><img src="/img/image-20200519140024112.png" alt="image-20200519140024112"></p><p>2.在“<strong>C:\Windows\System32\drivers\etc</strong>”路径下的“<strong>hosts</strong>”文件中加上”<strong>199.232.68.133 raw.githubusercontent.com</strong>“，无法直接改hosts文件的时候可以先复制到桌面，改完后替换文件</p><p><img src="/img/image-20200519140231187.png" alt="image-20200519140231187"></p><p>3.打开pycharm，点击<strong>File-&gt;Settings-&gt;Plugins</strong>，输入<strong>IntelliBot</strong>，点击<strong>Install</strong>下载就可以了</p><p><img src="/img/image-20200519140827606.png" alt="image-20200519140827606"></p><h4 id="RobotFramework的RIDE启动报错"><a href="#RobotFramework的RIDE启动报错" class="headerlink" title="RobotFramework的RIDE启动报错"></a>RobotFramework的RIDE启动报错</h4><p>报错信息：</p><p><img src="/img/image-20200518233216745.png" alt="image-20200518233216745"></p><p>解决方案：</p><p>在python3的安装文件下<strong>Lib\site-packages\robotide\application\application.py</strong>文件中的<strong>Onlnit</strong>方法中增加</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.locale = wx.Locale(wx.LANGUAGE_ENGLISH)</span><br></pre></td></tr></table></figure><p><img src="/img/image-20200518233745149.png" alt="image-20200518233745149"></p><h4 id="pycharm代码内容和控制台中文乱码"><a href="#pycharm代码内容和控制台中文乱码" class="headerlink" title="pycharm代码内容和控制台中文乱码"></a>pycharm代码内容和控制台中文乱码</h4><p>解决方案：</p><p>1.打开pycharm，点击<strong>File-&gt;Settings-&gt;Editor-&gt;Font</strong>，将<strong>Fallback font</strong>改为有中文的字体</p><p><img src="/img/image-20200519211836394.png" alt="image-20200519211836394"></p><p>2.打开<strong>Editor-&gt;Color Scheme -&gt; Console Font</strong>，将第一个<strong>Font</strong>改为带有中文的字体</p><p><img src="/img/image-20200519211931745.png" alt="image-20200519211931745"></p><p><img src="C:%5Cblog%5Cthemes%5CBlueLake%5Csource%5Cimg%5Cimage-20200520223557252.png" alt="image-20200520223557252"></p>]]></content>
+    
+    <summary type="html">
+    
+      Robotframework安装使用的报错及解决方案
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+      <category term="Robotframework" scheme="http://yoursite.com/categories/Python/Robotframework/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="Robotframework" scheme="http://yoursite.com/tags/Robotframework/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Python+Robotframework】pycharm下robotframework环境搭建</title>
+    <link href="http://yoursite.com/article/202005181545.html"/>
+    <id>http://yoursite.com/article/202005181545.html</id>
+    <published>2020-05-18T07:45:25.000Z</published>
+    <updated>2020-05-19T14:31:51.409Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>习惯了用pycharm写自动化用例，为了可以更好的使用，配置pycharm下robotframework环境搭建。python2已经停止维护，robotframework-ride最近已更新支持python3，本文的环境搭建是基于python3的</p><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>1.安装Python3，官网：<a href="https://www.python.org/" target="_blank" rel="noopener">https://www.python.org/</a> 自行下载安装</p><p>2.安装robotframework</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install robotframework</span><br></pre></td></tr></table></figure><p>3.安装robotframework-ride</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install robotframework-ride</span><br></pre></td></tr></table></figure><p>4.若安装其他模块，自行安装：pip install xxx(模块名)</p><p>5.安装pycharm，官网：<a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/</a> 自行下载安装</p><h4 id="配置pycharm的robot-framework环境"><a href="#配置pycharm的robot-framework环境" class="headerlink" title="配置pycharm的robot framework环境"></a>配置pycharm的robot framework环境</h4><p>1.打开pycharm，新建*.robot的文件</p><p><img src="/img/image-20200518223156454.png" alt="image-20200518223156454"></p><p>2.打开新建的文件，点击文件上方出现的<strong>Install plugins</strong></p><p><img src="/img/image-20200518223529905.png" alt="image-20200518223529905"></p><p>3.安装<strong>IntelliBot</strong>和<strong>Robot Framework Support</strong></p><p><img src="/img/image-20200518223930034.png" alt="image-20200518223930034"></p><p>4.在设置面板的<strong>Editor-&gt;File Types</strong>界面，找到 <strong>Robot Feature</strong> ，添加*.txt后缀参数（如下图），可按自己实际需要来添加</p><p><img src="/img/image-20200519223054483.png" alt="image-20200519223054483"></p><h4 id="配置case和suite的运行Tools"><a href="#配置case和suite的运行Tools" class="headerlink" title="配置case和suite的运行Tools"></a>配置case和suite的运行Tools</h4><p>打开pycharm，点击File-&gt;Settings-&gt;Tools-&gt;External Tools界面，新增一个Tools</p><p><img src="/img/image-20200519144300331.png" alt="image-20200519144300331"></p><p>1.运行单个用例</p><p>Name：Robot Run SingleTestCase</p><p>Program：C:\Python\Python38\Scripts\robot.exe（python安装目录下）</p><p>Arguments：log是放置生成结果的文件侠</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-d log --test &quot;$SelectedText$&quot; $FilePath$</span><br></pre></td></tr></table></figure><p>Working directory：$ProjectFileDir$</p><p><img src="/img/image-20200519221750794.png" alt="image-20200519221750794"></p><p>2.运行当前集合的用例</p><p>Name：Robot Run SuiteTestCase</p><p>Program：C:\Python\Python38\Scripts\robot.exe（python安装目录下）</p><p>Arguments：log是放置生成结果的文件侠</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-d log $FilePath$</span><br></pre></td></tr></table></figure><p>Working directory：$ProjectFileDir$</p><p><img src="/img/image-20200519222717039.png" alt="image-20200519222717039"></p><p>3.运行所有用例</p><p>Name：Robot Run AllTestCase</p><p>Program：C:\Python\Python38\Scripts\robot.exe（python安装目录下）</p><p>Arguments：log是放置生成结果的文件侠</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-d log $FileDir$</span><br></pre></td></tr></table></figure><p>Working directory：$ProjectFileDir$</p><p><img src="/img/image-20200519222757054.png" alt="image-20200519222757054"></p><h4 id="配置和使用过程中出现的报错"><a href="#配置和使用过程中出现的报错" class="headerlink" title="配置和使用过程中出现的报错"></a>配置和使用过程中出现的报错</h4><a href="/article/202005182318.html" title="【Python+Robotframework】Robotframework安装使用的报错及解决方案">【Python+Robotframework】Robotframework安装使用的报错及解决方案</a>]]></content>
+    
+    <summary type="html">
+    
+      pycharm下robotframework环境搭建
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+      <category term="Robotframework" scheme="http://yoursite.com/categories/Python/Robotframework/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="Robotframework" scheme="http://yoursite.com/tags/Robotframework/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Python】时间相关模块(datetime、time)</title>
+    <link href="http://yoursite.com/article/202005132050.html"/>
+    <id>http://yoursite.com/article/202005132050.html</id>
+    <published>2020-05-13T12:50:15.000Z</published>
+    <updated>2020-05-14T06:55:06.454Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="datetime、time模块"><a href="#datetime、time模块" class="headerlink" title="datetime、time模块"></a>datetime、time模块</h3><h4 id="主要的类"><a href="#主要的类" class="headerlink" title="主要的类"></a>主要的类</h4><p>处理日期（年月日）</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">datetime.date()</span><br></pre></td></tr></table></figure><p>处理时间（时分秒、毫秒）</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">datetime.time()</span><br></pre></td></tr></table></figure><p>处理日期+时间</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">datetime.datetime()</span><br></pre></td></tr></table></figure><p>处理时段（时间间隔）</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">datetime.timedelta()</span><br></pre></td></tr></table></figure><h4 id="获取当前时间"><a href="#获取当前时间" class="headerlink" title="获取当前时间"></a>获取当前时间</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">datetime.datetime.today()</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">datetime.datetime.now()</span><br></pre></td></tr></table></figure><h4 id="时间戳"><a href="#时间戳" class="headerlink" title="时间戳"></a>时间戳</h4><h4 id="时间上的加减法"><a href="#时间上的加减法" class="headerlink" title="时间上的加减法"></a>时间上的加减法</h4>]]></content>
+    
+    <summary type="html">
+    
+      Python之datetime、time
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Python】时间戳转换</title>
+    <link href="http://yoursite.com/article/202005122113.html"/>
+    <id>http://yoursite.com/article/202005122113.html</id>
+    <published>2020-05-12T13:13:54.000Z</published>
+    <updated>2020-05-13T02:26:41.034Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="时间戳转换"><a href="#时间戳转换" class="headerlink" title="时间戳转换"></a>时间戳转换</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 当前时间转换为时间戳</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">now_to_timestamp</span><span class="params">(digits=<span class="number">10</span>)</span>:</span></span><br><span class="line">    time_stamp = int(round(time.time() * (<span class="number">10</span> ** (digits - <span class="number">10</span>))))</span><br><span class="line">    <span class="keyword">return</span> time_stamp</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将输入的时间转换为时间戳</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">time_to_timestamp</span><span class="params">(time_str)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        time_str = datetime.datetime.strptime(time_str, <span class="string">'%Y-%m-%d %H:%M:%S'</span>)</span><br><span class="line">        time_stamp = int(round(time.mktime(time_str.timetuple())))</span><br><span class="line">        <span class="keyword">return</span> time_stamp</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="keyword">return</span> e</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将输入的时间戳转为时间</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">timestamp_to_time</span><span class="params">(timestamp)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">if</span> len(str(timestamp)) &gt; <span class="number">10</span>:</span><br><span class="line">            timestamp = timestamp*(<span class="number">10</span>**(<span class="number">10</span>-len(str(timestamp))))</span><br><span class="line">        time_str = datetime.datetime.fromtimestamp(timestamp)</span><br><span class="line">        time_str = datetime.datetime.strftime(time_str, <span class="string">'%Y-%m-%d %H:%M:%S'</span>)</span><br><span class="line">        <span class="keyword">return</span> time_str</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="keyword">return</span> e</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      Python中时间戳的转换
+    
+    </summary>
+    
+    
+      <category term="时间戳" scheme="http://yoursite.com/categories/%E6%97%B6%E9%97%B4%E6%88%B3/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Python+Selenium】Selenium中无法点击元素情况分析</title>
+    <link href="http://yoursite.com/article/202005121258.html"/>
+    <id>http://yoursite.com/article/202005121258.html</id>
+    <published>2020-05-12T04:58:39.000Z</published>
+    <updated>2020-05-12T07:41:07.005Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Selenium中经常会出现元素无法点击的情况，争对该情况做出分析："><a href="#Selenium中经常会出现元素无法点击的情况，争对该情况做出分析：" class="headerlink" title="Selenium中经常会出现元素无法点击的情况，争对该情况做出分析："></a>Selenium中经常会出现元素无法点击的情况，争对该情况做出分析：</h3><p>1.判断元素是否可以点击，is_</p><p>2.可点击元素响应时间较慢，或网速不好，使用适合的等待时间</p><p>3.元素被其他元素遮挡，如被下拉列表遮挡，可先点击其他无影响元素</p><p>4.</p>]]></content>
+    
+    <summary type="html">
+    
+      Selenium中无法点击元素情况分析
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+      <category term="Selenium" scheme="http://yoursite.com/categories/Python/Selenium/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="Selenium" scheme="http://yoursite.com/tags/Selenium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Python】Python语言标准库</title>
+    <link href="http://yoursite.com/article/202005111409.html"/>
+    <id>http://yoursite.com/article/202005111409.html</id>
+    <published>2020-05-11T06:09:39.000Z</published>
+    <updated>2020-05-13T05:55:47.275Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="标准库"><a href="#标准库" class="headerlink" title="标准库"></a>标准库</h2><p>在安装Python时就默认已经安装好的模块，Python具有功能强大的标准库</p><h3 id="数字和数学模块"><a href="#数字和数学模块" class="headerlink" title="数字和数学模块"></a>数字和数学模块</h3><p>numbers：数字抽象基类</p><p>math：数学函数</p><p>cmath：复数的数学函数</p><p>decimal：十进制定点和浮点算术</p><p>fractions：有理数</p><p>random：生成伪随机数</p><p>statistics：数学统计功能</p><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>datetime：基本日期和时间类型</p><p>calendar：与日历相关的一般功能</p><p>collections：容器数据类型</p><p>heapq：堆队列算法</p><p>bisect：数组二分算法</p><p>array：高效的数值数组</p><p>weakref：弱引用</p><p>types：动态类型创建和内置类型的名称</p><p>copy：浅层和深层复制操作</p><p>pprint：格式化输出</p><p>reprlib：备用repr()实现</p><p>enum：支持枚举</p><h3 id="功能编程模块"><a href="#功能编程模块" class="headerlink" title="功能编程模块"></a>功能编程模块</h3><p>itertools：为高效循环创建迭代器的函数</p><p>functools：可调用对象的高阶函数和操作</p><p>operator：标准运算符作为函数</p><h3 id="数据持久化"><a href="#数据持久化" class="headerlink" title="数据持久化"></a>数据持久化</h3><p>pickle：Python对象序列化</p><p>copyreh：注册pickle支持功能</p><p>shelve：Python对象持久化</p><p>marshal：内部Python对象序列化</p><p>dbm：与Unix“数据库”的接口</p><p>sqlite3：SQLite数据库的DB-API 2.0接口</p><h3 id="数据压缩和存档"><a href="#数据压缩和存档" class="headerlink" title="数据压缩和存档"></a>数据压缩和存档</h3><p>zlib：与gzip兼容的压缩</p><p>gzip/bz2：支持gzip/bzip2文件</p><p>lzma：使用LZMA算法进行压缩</p><p>zipfile：使用ZIP存档</p><p>tarfiel：读取和写入tar归档文件</p><h3 id="文件格式"><a href="#文件格式" class="headerlink" title="文件格式"></a>文件格式</h3><p>csv：CSV文件读写</p><p>configparser：配置文件解析器</p><p>netrc：netrc文件处理</p><p>xdrlib：对XDR数据进行编码和解码</p><p>plistlib：生成并解析MAC OS X.plist文件</p><h3 id="文件和目录访问"><a href="#文件和目录访问" class="headerlink" title="文件和目录访问"></a>文件和目录访问</h3><p>pathlib：面向对象的文件系统路径</p><p>os.path：常见的路径名操作</p><p>fileinput：迭代多个输入流中的行</p><p>stat：解释stat()结果</p><p>filecmp：文件和目录比较</p><p>tempfile：生成临时文件和 目录</p><p>glob：Unix文件名模式匹配</p><p>fnmatch：Unix文件名模式匹配</p><p>linecache：随机访问文本行</p><p>shutil：高级文件操作</p><p>macpath：Mac OS 9路径操作函数</p><h3 id="通用操作系统服务"><a href="#通用操作系统服务" class="headerlink" title="通用操作系统服务"></a>通用操作系统服务</h3><p>os：其他操作系统接口</p><p>io：用于处理流的核心工具</p><p>time：时间访问和转换</p><p>argparse：用于命令行选项，参数和子命令的解析器</p><p>getopt：用于命令行选项的C风格解析器</p><p>logging：Python的日志记录工具</p><p>getpass：便携式密码输入</p><p>curses：字符单元格显示的终端处理</p><p>platform：访问底层平台的标识数据</p><p>errno：标准errno系统符号</p><p>ctypes：Python的外部函数库</p><h3 id="并发执行"><a href="#并发执行" class="headerlink" title="并发执行"></a>并发执行</h3><p>threading：基于线程的并行性</p><p>multiprocessing：基于进程的并行性</p><p>concurrent.futures：启动并行任务</p><p>subprocess：子流程管理</p><p>sched：事件调度程序</p><p>queue：同步的队列类</p><p>_thread：低级线程API</p><h3 id="加密服务"><a href="#加密服务" class="headerlink" title="加密服务"></a>加密服务</h3><p>hashlib：安全哈希和消息摘要算法接口</p><p>hmac：用于消息身份验证的密钥哈希算法</p><p>secrets：生成用于管理机密的安全随机数</p><h3 id="网络和进程间通信"><a href="#网络和进程间通信" class="headerlink" title="网络和进程间通信"></a>网络和进程间通信</h3><p>asyncio：异步I/O</p><p>socket：低级网络接口</p><p>ssl：套接字对象的TLS/SSL包装器</p><p>select：等待I/O完成</p><p>selectors：高级I/O复用</p><p>asyncore：异步套接字处理程序</p><p>asynchat：异步套接字命令/响应处理程序</p><p>signal：设置异步事件的处理程序</p><h3 id="互联网数据处理"><a href="#互联网数据处理" class="headerlink" title="互联网数据处理"></a>互联网数据处理</h3><p>email：电子邮件和MIME处理包</p><p>json：JSON编码器和解码器</p><p>mailcap：Mailcap文件处理</p><p>mailbox：以各种格式处理邮箱</p><p>mimetypes：将文件名映射到MIME类型</p><p>base64：Base16/Base32/Base64/Base85数据编码</p><p>binhex：对binhex4文件进行编码和解码</p><p>binascii：在二进制和ASCII之间转换</p><p>quopri：对MIME引用的可打印数据进行编码和解码、</p><p>uu：对uuencode文件进行编码和解码</p><h3 id="互联网协议和支持"><a href="#互联网协议和支持" class="headerlink" title="互联网协议和支持"></a>互联网协议和支持</h3><p>webbrowser：Web浏览器控制器</p><p>cgi：通用网关接口支持</p><p>cgitb：CGI脚本的回溯管理器</p><p>wsgiref：WSGI使用程序和参考实现</p><p>urllib：URL处理模块</p><p>http：HTTP模块</p><p>ftplib/poplib/imaplib/nntplib/smtplib：FTP/POP3/IMAP4NNTP/SMTP协议客户端</p><p>smtpd：SMTP服务器</p><p>telnetlib：Telnet客户端</p><p>socketserver：网络服务器的框架</p><p>xmlrpc：XMLRPC服务器和客户端模块</p><p>ipaddress：IPv4/IPv6操作库</p><h3 id="多媒体服务"><a href="#多媒体服务" class="headerlink" title="多媒体服务"></a>多媒体服务</h3><p>audioop：处理原始音频数据</p><p>aifc：读写AIFF和AIFC文件</p><p>sunau：读取和写入Sun AU文件</p><p>wave：读写IFF分块数据</p><p>colorsys：颜色系统之间的转换</p><p>imghdr：确定图像的类型</p><p>sndhdr：确定声音文件的类型</p><p>ossaudiodev：访问兼容OSS的音频设备</p><h3 id="结构化标记处理工具"><a href="#结构化标记处理工具" class="headerlink" title="结构化标记处理工具"></a>结构化标记处理工具</h3><p>html：超文本标记语言支持</p><p>xml：XML处理模块</p><h3 id="程序框架"><a href="#程序框架" class="headerlink" title="程序框架"></a>程序框架</h3><p>turtle：海龟作图库</p><p>cmd：支持面向行的命令解释器</p><p>shlex：简单的此法分析</p><h3 id="图形用户界面"><a href="#图形用户界面" class="headerlink" title="图形用户界面"></a>图形用户界面</h3><p>tkinter：Tcl/Tk的Python接口</p>]]></content>
+    
+    <summary type="html">
+    
+      Python标准库总结
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Python+Django】pip install Django很慢的解决办法</title>
+    <link href="http://yoursite.com/article/202004292248.html"/>
+    <id>http://yoursite.com/article/202004292248.html</id>
+    <published>2020-04-29T14:48:44.000Z</published>
+    <updated>2020-04-29T14:52:15.013Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用pip安装Django时，速度很慢，解决方案：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -i https://pypi.douban.com/simple django</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用pip安装Django时，速度很慢，解决方案：&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/t
+      
+    
+    </summary>
+    
+    
+      <category term="Django" scheme="http://yoursite.com/categories/Django/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+    
+  </entry>
   
   <entry>
     <title>【Python】二进制、八进制、十进制、十六进制之间的转换</title>

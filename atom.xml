@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2020-05-27T14:39:39.920Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://yuxinla.github.io/"/>
+  <updated>2020-05-27T15:32:06.803Z</updated>
+  <id>https://yuxinla.github.io/</id>
   
   <author>
     <name>ling</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>【Python】Linux下非root用户安装python3</title>
-    <link href="http://yoursite.com/article/202005272137.html"/>
-    <id>http://yoursite.com/article/202005272137.html</id>
+    <link href="https://yuxinla.github.io/article/202005272137.html"/>
+    <id>https://yuxinla.github.io/article/202005272137.html</id>
     <published>2020-05-27T13:37:53.000Z</published>
-    <updated>2020-05-27T14:39:39.920Z</updated>
+    <updated>2020-05-27T15:32:06.803Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>工作过程中，遇到自动化框架python2改为python3时，服务器上未安装python3环境，无外网，在非root用户下安装python3环境的情况，记录一下</p><h3 id="安装python3"><a href="#安装python3" class="headerlink" title="安装python3"></a>安装python3</h3><p>1.下载python3安装包，网址：<a href="https://www.python.org/downloads/source/" target="_blank" rel="noopener">https://www.python.org/downloads/source/</a> 此处我选择3.8.3版本的</p><p><img src="/img/image-20200527215143661.png" alt="image-20200527215143661"></p><p>2.将下载的安装包上传至服务器上并解压</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">tar -xzf Python-3.8.3.tgz</span><br><span class="line">mkdir -p /home/python38 # 这里新建python安装路径，安装在其他地方也可以，这里选择home下</span><br><span class="line">cd Python-3.8.3</span><br><span class="line">./configure --prefix="/home/python38"</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure><p>3.一般来说，上述完成后pip已经安装好了，可在<strong>/home/python38/bin/</strong>下看到</p><p>4.环境变量配置</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bash_profile</span><br></pre></td></tr></table></figure><p>在~/.bash_profile文件中配置</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PATH="$PATH:/home/python38"</span><br><span class="line">export PATH="$PATH:/home/python38/bin"</span><br></pre></td></tr></table></figure><p>保存文件后，执行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure><p>5.查看python是否已安装成功</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python --version</span><br></pre></td></tr></table></figure><h3 id="安装第三方模块"><a href="#安装第三方模块" class="headerlink" title="安装第三方模块"></a>安装第三方模块</h3><p>1.在官网下载第三方模块，官网：<a href="https://pypi.org/" target="_blank" rel="noopener">https://pypi.org/</a></p><p><img src="/img/image-20200527223224630.png" alt="image-20200527223224630"></p><p>2.两种文件均可下载</p><p><img src="/img/image-20200527222553964.png" alt="image-20200527222553964"></p><p>a.安装<strong>*.whl</strong>文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install requests-2.23.0-py2.py3-none-any.whl</span><br></pre></td></tr></table></figure><p>b.安装<strong>*.tar.gz</strong>文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install requests-2.23.0.tar.gz</span><br></pre></td></tr></table></figure><p>3.安装时出现以下情况</p><p><img src="/img/image-20200520223557252.png" alt="image-20200520223557252"></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR: Could not find a version that satisfies the requirement soupsieve&gt;=1.2 (from beautifulsoup4==4.9.1) (from versions: none)</span><br><span class="line">ERROR: No matching distribution found for soupsieve&gt;=1.2 (from beautifulsoup4==4.9.1)</span><br></pre></td></tr></table></figure><p>报错信息意思是：需要先安装soupsieve模块，版本要&gt;=1.2</p>]]></content>
     
@@ -32,21 +32,21 @@
     </summary>
     
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="https://yuxinla.github.io/categories/python/"/>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/python/Linux/"/>
+      <category term="Linux" scheme="https://yuxinla.github.io/categories/python/Linux/"/>
     
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+      <category term="python" scheme="https://yuxinla.github.io/tags/python/"/>
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://yuxinla.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>【Python+Robotframework】Robotframework接口自动化</title>
-    <link href="http://yoursite.com/article/202005192348.html"/>
-    <id>http://yoursite.com/article/202005192348.html</id>
+    <link href="https://yuxinla.github.io/article/202005192348.html"/>
+    <id>https://yuxinla.github.io/article/202005192348.html</id>
     <published>2020-05-19T15:48:02.000Z</published>
     <updated>2020-05-20T14:35:37.126Z</updated>
     
@@ -59,25 +59,25 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/categories/Python/"/>
     
-      <category term="Robotframework" scheme="http://yoursite.com/categories/Python/Robotframework/"/>
+      <category term="Robotframework" scheme="https://yuxinla.github.io/categories/Python/Robotframework/"/>
     
-      <category term="接口自动化" scheme="http://yoursite.com/categories/Python/Robotframework/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+      <category term="接口自动化" scheme="https://yuxinla.github.io/categories/Python/Robotframework/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/tags/Python/"/>
     
-      <category term="Robotframework" scheme="http://yoursite.com/tags/Robotframework/"/>
+      <category term="Robotframework" scheme="https://yuxinla.github.io/tags/Robotframework/"/>
     
-      <category term="接口自动化" scheme="http://yoursite.com/tags/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+      <category term="接口自动化" scheme="https://yuxinla.github.io/tags/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>【Python+Robotframework】Robotframework安装使用的报错及解决方案</title>
-    <link href="http://yoursite.com/article/202005182318.html"/>
-    <id>http://yoursite.com/article/202005182318.html</id>
+    <link href="https://yuxinla.github.io/article/202005182318.html"/>
+    <id>https://yuxinla.github.io/article/202005182318.html</id>
     <published>2020-05-18T15:18:36.000Z</published>
     <updated>2020-05-27T13:20:48.516Z</updated>
     
@@ -90,21 +90,21 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/categories/Python/"/>
     
-      <category term="Robotframework" scheme="http://yoursite.com/categories/Python/Robotframework/"/>
+      <category term="Robotframework" scheme="https://yuxinla.github.io/categories/Python/Robotframework/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/tags/Python/"/>
     
-      <category term="Robotframework" scheme="http://yoursite.com/tags/Robotframework/"/>
+      <category term="Robotframework" scheme="https://yuxinla.github.io/tags/Robotframework/"/>
     
   </entry>
   
   <entry>
     <title>【Python+Robotframework】pycharm下robotframework环境搭建</title>
-    <link href="http://yoursite.com/article/202005181545.html"/>
-    <id>http://yoursite.com/article/202005181545.html</id>
+    <link href="https://yuxinla.github.io/article/202005181545.html"/>
+    <id>https://yuxinla.github.io/article/202005181545.html</id>
     <published>2020-05-18T07:45:25.000Z</published>
     <updated>2020-05-19T14:31:51.409Z</updated>
     
@@ -117,21 +117,21 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/categories/Python/"/>
     
-      <category term="Robotframework" scheme="http://yoursite.com/categories/Python/Robotframework/"/>
+      <category term="Robotframework" scheme="https://yuxinla.github.io/categories/Python/Robotframework/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/tags/Python/"/>
     
-      <category term="Robotframework" scheme="http://yoursite.com/tags/Robotframework/"/>
+      <category term="Robotframework" scheme="https://yuxinla.github.io/tags/Robotframework/"/>
     
   </entry>
   
   <entry>
     <title>【Python】时间相关模块(datetime、time)</title>
-    <link href="http://yoursite.com/article/202005132050.html"/>
-    <id>http://yoursite.com/article/202005132050.html</id>
+    <link href="https://yuxinla.github.io/article/202005132050.html"/>
+    <id>https://yuxinla.github.io/article/202005132050.html</id>
     <published>2020-05-13T12:50:15.000Z</published>
     <updated>2020-05-14T06:55:06.454Z</updated>
     
@@ -144,17 +144,17 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>【Python】时间戳转换</title>
-    <link href="http://yoursite.com/article/202005122113.html"/>
-    <id>http://yoursite.com/article/202005122113.html</id>
+    <link href="https://yuxinla.github.io/article/202005122113.html"/>
+    <id>https://yuxinla.github.io/article/202005122113.html</id>
     <published>2020-05-12T13:13:54.000Z</published>
     <updated>2020-05-13T02:26:41.034Z</updated>
     
@@ -167,17 +167,17 @@
     </summary>
     
     
-      <category term="时间戳" scheme="http://yoursite.com/categories/%E6%97%B6%E9%97%B4%E6%88%B3/"/>
+      <category term="时间戳" scheme="https://yuxinla.github.io/categories/%E6%97%B6%E9%97%B4%E6%88%B3/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>【Python+Selenium】Selenium中无法点击元素情况分析</title>
-    <link href="http://yoursite.com/article/202005121258.html"/>
-    <id>http://yoursite.com/article/202005121258.html</id>
+    <link href="https://yuxinla.github.io/article/202005121258.html"/>
+    <id>https://yuxinla.github.io/article/202005121258.html</id>
     <published>2020-05-12T04:58:39.000Z</published>
     <updated>2020-05-12T07:41:07.005Z</updated>
     
@@ -190,21 +190,21 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/categories/Python/"/>
     
-      <category term="Selenium" scheme="http://yoursite.com/categories/Python/Selenium/"/>
+      <category term="Selenium" scheme="https://yuxinla.github.io/categories/Python/Selenium/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/tags/Python/"/>
     
-      <category term="Selenium" scheme="http://yoursite.com/tags/Selenium/"/>
+      <category term="Selenium" scheme="https://yuxinla.github.io/tags/Selenium/"/>
     
   </entry>
   
   <entry>
     <title>【Python】Python语言标准库</title>
-    <link href="http://yoursite.com/article/202005111409.html"/>
-    <id>http://yoursite.com/article/202005111409.html</id>
+    <link href="https://yuxinla.github.io/article/202005111409.html"/>
+    <id>https://yuxinla.github.io/article/202005111409.html</id>
     <published>2020-05-11T06:09:39.000Z</published>
     <updated>2020-05-13T05:55:47.275Z</updated>
     
@@ -217,17 +217,17 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>【Python+Django】pip install Django很慢的解决办法</title>
-    <link href="http://yoursite.com/article/202004292248.html"/>
-    <id>http://yoursite.com/article/202004292248.html</id>
+    <link href="https://yuxinla.github.io/article/202004292248.html"/>
+    <id>https://yuxinla.github.io/article/202004292248.html</id>
     <published>2020-04-29T14:48:44.000Z</published>
     <updated>2020-04-29T14:52:15.013Z</updated>
     
@@ -244,19 +244,19 @@
     </summary>
     
     
-      <category term="Django" scheme="http://yoursite.com/categories/Django/"/>
+      <category term="Django" scheme="https://yuxinla.github.io/categories/Django/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/tags/Python/"/>
     
-      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+      <category term="Django" scheme="https://yuxinla.github.io/tags/Django/"/>
     
   </entry>
   
   <entry>
     <title>【Python】二进制、八进制、十进制、十六进制之间的转换</title>
-    <link href="http://yoursite.com/article/202004272135.html"/>
-    <id>http://yoursite.com/article/202004272135.html</id>
+    <link href="https://yuxinla.github.io/article/202004272135.html"/>
+    <id>https://yuxinla.github.io/article/202004272135.html</id>
     <published>2020-04-27T13:35:57.000Z</published>
     <updated>2020-04-28T13:29:17.222Z</updated>
     
@@ -269,17 +269,17 @@
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://yuxinla.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>【测试设计】登录功能测试设计</title>
-    <link href="http://yoursite.com/article/202004182305.html"/>
-    <id>http://yoursite.com/article/202004182305.html</id>
+    <link href="https://yuxinla.github.io/article/202004182305.html"/>
+    <id>https://yuxinla.github.io/article/202004182305.html</id>
     <published>2020-04-18T15:05:03.000Z</published>
     <updated>2020-04-27T13:43:25.650Z</updated>
     
@@ -292,19 +292,19 @@
     </summary>
     
     
-      <category term="测试设计" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/"/>
+      <category term="测试设计" scheme="https://yuxinla.github.io/categories/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/"/>
     
     
-      <category term="测试设计" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/"/>
+      <category term="测试设计" scheme="https://yuxinla.github.io/tags/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1/"/>
     
-      <category term="测试点" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95%E7%82%B9/"/>
+      <category term="测试点" scheme="https://yuxinla.github.io/tags/%E6%B5%8B%E8%AF%95%E7%82%B9/"/>
     
   </entry>
   
   <entry>
     <title>【数据库】MySQL的下载与安装教程</title>
-    <link href="http://yoursite.com/article/202004172233.html"/>
-    <id>http://yoursite.com/article/202004172233.html</id>
+    <link href="https://yuxinla.github.io/article/202004172233.html"/>
+    <id>https://yuxinla.github.io/article/202004172233.html</id>
     <published>2020-04-17T14:33:13.000Z</published>
     <updated>2020-04-23T05:40:27.522Z</updated>
     
@@ -317,19 +317,19 @@
     </summary>
     
     
-      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://yuxinla.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://yuxinla.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://yuxinla.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>【安全测试】SQL注入测试总结</title>
-    <link href="http://yoursite.com/article/202004151455.html"/>
-    <id>http://yoursite.com/article/202004151455.html</id>
+    <link href="https://yuxinla.github.io/article/202004151455.html"/>
+    <id>https://yuxinla.github.io/article/202004151455.html</id>
     <published>2020-04-15T06:55:12.000Z</published>
     <updated>2020-04-17T14:33:51.386Z</updated>
     
@@ -342,19 +342,19 @@
     </summary>
     
     
-      <category term="安全测试" scheme="http://yoursite.com/categories/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/"/>
+      <category term="安全测试" scheme="https://yuxinla.github.io/categories/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="安全测试" scheme="http://yoursite.com/tags/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/"/>
+      <category term="安全测试" scheme="https://yuxinla.github.io/tags/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
+      <category term="SQL" scheme="https://yuxinla.github.io/tags/SQL/"/>
     
   </entry>
   
   <entry>
     <title>【Hexo博客】Hexo+GitHub搭建blog</title>
-    <link href="http://yoursite.com/article/202004132201.html"/>
-    <id>http://yoursite.com/article/202004132201.html</id>
+    <link href="https://yuxinla.github.io/article/202004132201.html"/>
+    <id>https://yuxinla.github.io/article/202004132201.html</id>
     <published>2020-04-13T14:01:06.000Z</published>
     <updated>2020-04-15T08:02:00.720Z</updated>
     
@@ -367,17 +367,17 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="https://yuxinla.github.io/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://yuxinla.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/article/202004131703.html"/>
-    <id>http://yoursite.com/article/202004131703.html</id>
+    <link href="https://yuxinla.github.io/article/202004131703.html"/>
+    <id>https://yuxinla.github.io/article/202004131703.html</id>
     <published>2020-04-13T09:03:12.707Z</published>
     <updated>2020-04-13T09:03:12.707Z</updated>
     

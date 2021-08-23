@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuxinla.github.io/"/>
-  <updated>2021-08-23T08:56:14.953Z</updated>
+  <updated>2021-08-23T09:30:10.173Z</updated>
   <id>https://yuxinla.github.io/</id>
   
   <author>
@@ -17,17 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>【Python+Django】Django1.10.3在python3.8报错：RuntimeError: __class__ not set defining &#39;AbstractBaseUser&#39; as...</title>
+    <title>【Python+Django】Django1.10.3在python3.8报错</title>
     <link href="https://yuxinla.github.io/article/202108231656.html"/>
     <id>https://yuxinla.github.io/article/202108231656.html</id>
     <published>2021-08-23T08:56:14.000Z</published>
-    <updated>2021-08-23T08:56:14.953Z</updated>
+    <updated>2021-08-23T09:30:10.173Z</updated>
+    
+    <content type="html"><![CDATA[<p>Django 1.10.3版本，Python 3.8.2版本，django项目创建成功，进入项目文件夹中，使用python manage.py报runtimeerror错误：RuntimeError: class not set defining ‘AbstractBaseUser’ as &lt;class ‘django.contrib.auth.base_user.AbstractBaseUser’&gt;. Was classcell propagated to type.new?</p><p><strong>解决方案：</strong></p><p>在文件Python38/Lib/site-packages/django/db/models/base.py加上如下代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">new_attrs = &#123;<span class="string">'__module__'</span>: module&#125;</span><br><span class="line">classcell = attrs.pop(<span class="string">'__classcell__'</span>, <span class="literal">None</span>)</span><br><span class="line"><span class="keyword">if</span> classcell <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">new_attrs[<span class="string">'__classcell__'</span>] = classcell</span><br><span class="line">new_class = super_new(cls, name, bases, new_attrs)</span><br></pre></td></tr></table></figure><p>位置如下：</p><img src="/img/image-20210823170942774.png" alt="image-20210823170942774" style="zoom:80%;" />]]></content>
     
     <summary type="html">
+    
+      Django1.10.3在python3.8报错：RuntimeError: __class__ not set defining &#39;AbstractBaseUser&#39; as...
     
     </summary>
     
     
+      <category term="Django" scheme="https://yuxinla.github.io/categories/Django/"/>
+    
+    
+      <category term="Django" scheme="https://yuxinla.github.io/tags/Django/"/>
     
   </entry>
   

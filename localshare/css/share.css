@@ -8,6 +8,11 @@
   font-size: 16px;
   font-style: normal;
 }
+.social-share:before {
+  content: '';
+  display: table;
+  clear: both;
+}
 .social-share .social-share-icon {
   display: inline-block;
   position: relative;
